@@ -85,3 +85,5 @@ The REST API to access the santex challenge task.
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+[link-author]: https://github.com/fedessilva
