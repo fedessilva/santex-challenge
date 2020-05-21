@@ -3,7 +3,7 @@
 [![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
 
 The goal is to make a project that exposes an API with an HTTP GET in this URI: /import-league/{leagueCode} . E.g., it must be possible to invoke the service using this URL:
-http://localhost:<port>/import-league/CL
+http://localhost/import-league/CL
 
 Additionally, expose an HTTP GET in URI /total-players/{leagueCode}  , with a simple JSON response like this:
 {"total" : N } and HTTP Code 200.
@@ -27,7 +27,8 @@ Additionally, expose an HTTP GET in URI /total-players/{leagueCode}  , with a si
  php artisan migrate
 ```
 Optional Command.
- 
+
+This command is to use from the terminal because on browser sometimes depends on the webserver configuration could appear 503 service unavailable even though the script is running. 
 E.g. leagueCode=CL
 ```
  php artisan import:league {leagueCode}
